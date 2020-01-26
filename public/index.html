@@ -8,43 +8,50 @@
     />
     <title>Anime Collection</title>
     <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="upper-container">
+    <div class="container">
+      <div class="upper-container">
         <div class="navbar">
-      <div class="navbar-brand">
-        <a href="/"><img src="brand.png"/></a>
+          <div class="navbar-brand">
+            <a href="/"><img src="brand.png"/></a>
+          </div>
+          <div class="navbar-seasons">
+            <ul>
+              <li class="item">
+                <img class="season" src="spring90.png" />
+                <p>Spring</p>
+              </li>
+
+              <li class="item">
+                <img class="season" src="summer80.png" />
+                <p>Summer</p>
+              </li>
+
+              <li class="item">
+                <img class="season" src="autumn90.png" />
+                <p>Autumn</p>
+              </li>
+
+              <li class="item">
+                <img class="season" src="winter80.png" />
+                <p>Winter</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="navbar-seasons">
-        <ul>
-          <li class="item">
-            
-            <img class="season" src="spring90.png" />
-            <p>Spring</p>
-          </li>
 
-          <li class="item">
-            
-            <img class="season" src="summer80.png" />
-            <p>Summer</p>
-          </li>
-
-          <li class="item">
-            
-            <img class="season" src="autumn90.png" />
-            <p>Autumn</p>
-          </li>
-
-          <li class="item">
-            
-            <img class="season" src="winter80.png" />
-            <p>Winter</p>
-          </li>
-        </ul>
+      <div class="main-content">
+        <div class="loaded">
+          <ul class="animeList"></ul>
+        </div>
       </div>
     </div>
-    </div>
-
-    
+    <script src="action.js"></script>
   </body>
 </html>
