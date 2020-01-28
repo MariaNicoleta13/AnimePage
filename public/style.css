@@ -5,7 +5,7 @@ html {
 }
 .container {
   background-color: #c9cddf;
- min-height: 100%;
+  min-height: 100%;
   /* min-height: 100;  */
 }
 .upper-container {
@@ -64,11 +64,10 @@ html {
 .main-content {
   display: table;
   margin: 0 auto;
- 
 }
 .loaded {
   margin-top: -25px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 .animeList {
   margin: 0 auto;
@@ -77,24 +76,52 @@ html {
 }
 .animeItem {
   float: left;
-  width: 25%;
+
   box-sizing: border-box;
-  height: 400px;
+  /* width: 25%;
+  height: 400px; */
+  width: 460px;
+  height: 265px;
 }
 .middle {
-  margin-right: 3.75%;
-  margin-left: 3.75%;
+  /* margin-right: 3.75%; */
+  margin-right: 10px;
+  /* margin-left: 3.75%; */
+  margin-left: 10px;
 }
 .first {
-  margin-left: 7.5%;
+  /* margin-left: 7.5%; */
+  margin-left: 20px;
 }
 .third {
-  margin-right: 7.5%;
+  /* margin-right: 7.5%; */
+  margin-right: 20px;
 }
-.card{
-  height: 100%;
-}
-.animeImage {
+.card {
   width: 100%;
   height: 100%;
+  /* max-width: 185px;
+  height: 265px; */
+  background: #bbc7d6;
+}
+.animeImage {
+  /* width: 100%;
+  height: 100%; */
+  width: 185px;
+  height: 265px;
+}
+.description {
+  width: 275px;
+  display: block;
+  height: 100%;
+  float: right;
+}
+.description p {
+  margin: 0;
+  overflow: hidden;
+  height: 132px;
+ 
+}
+.description p::first-letter {
+  margin-left: 15px;
 }
