@@ -22,11 +22,13 @@ html {
 }
 .navbar-brand {
   display: inline-block;
-  width: 30%;
+  /* width: 30%; */
+  width: 64px;
 }
 
 .navbar-seasons {
-  width: 20%;
+  /* width: 20%; */
+  width: 260px;
   float: right;
 
   /* height:40px; */
@@ -115,13 +117,45 @@ html {
   display: block;
   height: 100%;
   float: right;
+  margin: 0;
 }
-.description p {
+/* .description p {
   margin: 0;
   overflow: hidden;
-  height: 132px;
- 
+  /* height: 132px; */
+  /* height: 50%;
+} */ 
+.description .mainText{
+  height: 50%;
+  margin: 0;
+  overflow: hidden;
 }
 .description p::first-letter {
   margin-left: 15px;
+}
+.header{
+  max-height: 25%;
+  overflow: hidden;
+}
+.header p{
+  margin: 0;
+  overflow: hidden;
+}
+.headerText{
+  width: 80%;
+  
+}
+.stats{
+  
+  width: 20%;
+  float:right;
+  height: 100%;
+  vertical-align: top;
+}
+.footer{
+  height: 25%;
+  
+}
+.footer p{
+  float: left;
 }

@@ -30,7 +30,6 @@ function list(element, clas) {
 
   listElement.appendChild(divElement);
 
-
   var imageElement = document.createElement("IMG"); //create <img>
   imageElement.setAttribute("src", element.image);
   imageElement.setAttribute("class", "animeImage");
@@ -41,17 +40,47 @@ function list(element, clas) {
   divText.setAttribute("class", "description");
   divElement.appendChild(divText);
 
-  var headerText=document.createElement("DIV");//<div class="headerText"> in description
+  var headerText = document.createElement("DIV"); //<div class="headerText"> in description
   divText.appendChild(headerText);
-  headerText.setAttribute("class","headerText");
-  headerText.appendChild(document.createTextNode(element.status));
-  headerText.appendChild(document.createTextNode(" "));
-  headerText.appendChild(document.createTextNode(element.details));
+  headerText.setAttribute("class", "header");
+  var divUpText=document.createElement("DIV");
+  headerText.appendChild(divUpText);
+  divUpText.setAttribute("class","headerText");
 
+  element.status.forEach(function(oneStatus,index){
+    var pStatus=document.createElement("P");
+    divUpText.appendChild(pStatus);
+    pStatus.appendChild(document.createTextNode(oneStatus));
+    var nr=index+1;
+    pStatus.setAttribute("class","status"+nr);
+  });
 
+  var pDetails=document.createElement("P");
+  divUpText.appendChild(pDetails);
+  pDetails.appendChild(document.createTextNode(element.details));
+
+  var divStats=document.createElement("DIV");
+  headerText.appendChild(divStats);
+  divStats.setAttribute("class","stats");
+  var mood=document.createElement("IMG");
+  mood.setAttribute("class","mood");
+  mood.setAttribute("src","smile.png");
+  divStats.appendChild(mood);
 
   var pMainText = document.createElement("P"); //create <p>
   divText.appendChild(pMainText);
+  pMainText.setAttribute("class","mainText");
   pMainText.appendChild(document.createTextNode(element.description));
+
+  var divFooter = document.createElement("DIV"); //<div class="footer">
+  divFooter.setAttribute("class", "footer");
+  divText.appendChild(divFooter);
+
+  element.genres.forEach(function(genre) { //iterate to add one genre at once
+    var pFooter = document.createElement("P"); //<div class="footer"><p>
+    divFooter.appendChild(pFooter);
+    pFooter.appendChild(document.createTextNode(genre));
+    // console.log(genre);
+  });
   
 }
