@@ -69,17 +69,7 @@ function list(element, clas) {
   pMainText.setAttribute("class", "mainText");
   pMainText.appendChild(document.createTextNode(element.description));
 
-  var divFooter = document.createElement("DIV"); //<div class="footer">
-  divFooter.setAttribute("class", "footer");
-  divText.appendChild(divFooter);
-
-  element.genres.forEach(function(genre) {
-    //iterate to add one genre at once
-    var pFooter = document.createElement("P"); //<div class="footer"><p>
-    divFooter.appendChild(pFooter);
-    pFooter.appendChild(document.createTextNode(genre));
-    // console.log(genre);
-  });
+  createFooterContent(divText, element);
 }
 
 function createStatsContent(headerText) {
@@ -87,9 +77,9 @@ function createStatsContent(headerText) {
   headerText.appendChild(divStats);
   divStats.setAttribute("class", "stats");
 
-  var row1=document.createElement("DIV");
+  var row1 = document.createElement("DIV");
   divStats.appendChild(row1);
-  row1.setAttribute("class","row1");
+  row1.setAttribute("class", "row1");
 
   var mood = document.createElement("IMG");
   mood.setAttribute("class", "mood");
@@ -101,16 +91,32 @@ function createStatsContent(headerText) {
   procent.appendChild(document.createTextNode("89%"));
   procent.setAttribute("class", "likes");
 
-  var row2=document.createElement("DIV");
+  var row2 = document.createElement("DIV");
   divStats.appendChild(row2);
-  row2.setAttribute("class","row2")
+  row2.setAttribute("class", "row2");
 
   var loveIcon = document.createElement("IMG");
   row2.appendChild(loveIcon);
   loveIcon.setAttribute("src", "heart.png");
 
-  var loved=document.createElement("P");
+  var loved = document.createElement("P");
   loved.appendChild(document.createTextNode("#5"));
   row2.appendChild(loved);
+}
 
+function createFooterContent(divText, element) {
+  var divFooter = document.createElement("DIV"); //<div class="footer">
+  divFooter.setAttribute("class", "footer");
+  divText.appendChild(divFooter);
+
+  element.genres.forEach(function(genre) {
+    //iterate to add one genre at once
+    var pFooter = document.createElement("P"); //<div class="footer"><p>
+    divFooter.appendChild(pFooter);
+    pFooter.appendChild(document.createTextNode(genre));
+  });
+
+  var addIcon = document.createElement("IMG");
+  divFooter.appendChild(addIcon);
+  addIcon.setAttribute("src", "add.png");
 }

@@ -153,13 +153,13 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.stats p{
+.stats p {
   display: inline;
 }
-.stats img{
+.stats img {
   padding-right: 5px;
 }
-.row1{
+.row1 {
   padding-bottom: 5px;
 }
 
@@ -168,4 +168,9 @@ html {
 }
 .footer p {
   float: left;
+}
+.footer img {
+  width: 33px;
+  padding-top: 16px;
+  float: right;
 }
