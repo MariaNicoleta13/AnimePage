@@ -123,9 +123,9 @@ html {
   margin: 0;
   overflow: hidden;
   /* height: 132px; */
-  /* height: 50%;
-} */ 
-.description .mainText{
+/* height: 50%;
+} */
+.description .mainText {
   height: 50%;
   margin: 0;
   overflow: hidden;
@@ -133,29 +133,39 @@ html {
 .description p::first-letter {
   margin-left: 15px;
 }
-.header{
+.header {
   max-height: 25%;
   overflow: hidden;
 }
-.header p{
+.header p {
   margin: 0;
   overflow: hidden;
 }
-.headerText{
+.headerText {
   width: 80%;
-  
+  display: inline-block;
 }
-.stats{
-  
+.stats {
   width: 20%;
-  float:right;
+  float: right;
   height: 100%;
   vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.footer{
+.stats p{
+  display: inline;
+}
+.stats img{
+  padding-right: 5px;
+}
+.row1{
+  padding-bottom: 5px;
+}
+
+.footer {
   height: 25%;
-  
 }
-.footer p{
+.footer p {
   float: left;
 }
