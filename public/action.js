@@ -33,11 +33,7 @@ function list(element, clas) {
 
   listElement.appendChild(divElement);
 
-  var imageElement = document.createElement("IMG"); //create <img>
-  imageElement.setAttribute("src", element.image);
-  imageElement.setAttribute("class", "animeImage");
-  divElement.appendChild(imageElement);
-  document.querySelector(".animeList").appendChild(listElement);
+  animePoster(divElement, element, listElement);
 
   var divText = document.createElement("DIV"); //create <div class="description"> in card
   divText.setAttribute("class", "description");
@@ -61,6 +57,7 @@ function list(element, clas) {
   var pDetails = document.createElement("P");
   divUpText.appendChild(pDetails);
   pDetails.appendChild(document.createTextNode(element.details));
+  pDetails.setAttribute("class","details");
 
   createStatsContent(headerText);
 
@@ -70,6 +67,32 @@ function list(element, clas) {
   pMainText.appendChild(document.createTextNode(element.description));
 
   createFooterContent(divText, element);
+}
+
+function animePoster(divElement, element, listElement) {
+  var divBackground = document.createElement("DIV");
+  divBackground.setAttribute("class", "background");
+  divElement.appendChild(divBackground);
+
+  var imageElement = document.createElement("IMG"); //create <img>
+  imageElement.setAttribute("src", element.image);
+  imageElement.setAttribute("class", "animeImage");
+  divBackground.appendChild(imageElement);
+  document.querySelector(".animeList").appendChild(listElement);
+
+  var overlay = document.createElement("DIV");
+  overlay.setAttribute("class", "overlay");
+  divBackground.appendChild(overlay);
+
+  var pTitle = document.createElement("P");
+  overlay.appendChild(pTitle);
+  pTitle.appendChild(document.createTextNode(element.title));
+  pTitle.setAttribute("class","title");
+
+  var studio = document.createElement("P");
+  studio.appendChild(document.createTextNode(element.studio));
+  studio.setAttribute("class","studio");
+  overlay.appendChild(studio);
 }
 
 function createStatsContent(headerText) {
@@ -101,6 +124,7 @@ function createStatsContent(headerText) {
 
   var loved = document.createElement("P");
   loved.appendChild(document.createTextNode("#5"));
+  loved.setAttribute("class","loved")
   row2.appendChild(loved);
 }
 
