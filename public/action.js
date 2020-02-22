@@ -57,9 +57,9 @@ function list(element, clas) {
   var pDetails = document.createElement("P");
   divUpText.appendChild(pDetails);
   pDetails.appendChild(document.createTextNode(element.details));
-  pDetails.setAttribute("class","details");
+  pDetails.setAttribute("class", "details");
 
-  createStatsContent(headerText,element);
+  createStatsContent(headerText, element);
 
   var pMainText = document.createElement("P"); //create <p>
   divText.appendChild(pMainText);
@@ -87,15 +87,15 @@ function animePoster(divElement, element, listElement) {
   var pTitle = document.createElement("P");
   overlay.appendChild(pTitle);
   pTitle.appendChild(document.createTextNode(element.title));
-  pTitle.setAttribute("class","title");
+  pTitle.setAttribute("class", "title");
 
   var studio = document.createElement("P");
   studio.appendChild(document.createTextNode(element.studio));
-  studio.setAttribute("class","studio");
+  studio.setAttribute("class", "studio");
   overlay.appendChild(studio);
 }
 
-function createStatsContent(headerText,element) {
+function createStatsContent(headerText, element) {
   var divStats = document.createElement("DIV"); //<div class="stats">
   headerText.appendChild(divStats);
   divStats.setAttribute("class", "stats");
@@ -106,21 +106,19 @@ function createStatsContent(headerText,element) {
 
   var mood = document.createElement("IMG");
   mood.setAttribute("class", "mood");
-  
+
   row1.appendChild(mood);
 
   var procent = document.createElement("P");
   row1.appendChild(procent);
-  procent.appendChild(document.createTextNode(element.rating+"%"));
+  procent.appendChild(document.createTextNode(element.rating + "%"));
   procent.setAttribute("class", "likes");
 
-  if(element.rating>=75){
-    mood.setAttribute("src", "smile.png"); 
-  }else
-  if(element.rating<75 && element.rating>=61){
-    mood.setAttribute("src", "neutral.png"); 
-  }else mood.setAttribute("src", "sad.png"); 
-
+  if (element.rating >= 75) {
+    mood.setAttribute("src", "smile.png");
+  } else if (element.rating < 75 && element.rating >= 61) {
+    mood.setAttribute("src", "neutral.png");
+  } else mood.setAttribute("src", "sad.png");
 
   var row2 = document.createElement("DIV");
   divStats.appendChild(row2);
@@ -131,8 +129,8 @@ function createStatsContent(headerText,element) {
   loveIcon.setAttribute("src", "heart.png");
 
   var loved = document.createElement("P");
-  loved.appendChild(document.createTextNode("#"+element.rank));
-  loved.setAttribute("class","loved")
+  loved.appendChild(document.createTextNode("#" + element.rank));
+  loved.setAttribute("class", "loved");
   row2.appendChild(loved);
 }
 
