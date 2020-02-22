@@ -59,7 +59,7 @@ function list(element, clas) {
   pDetails.appendChild(document.createTextNode(element.details));
   pDetails.setAttribute("class","details");
 
-  createStatsContent(headerText);
+  createStatsContent(headerText,element);
 
   var pMainText = document.createElement("P"); //create <p>
   divText.appendChild(pMainText);
@@ -95,7 +95,7 @@ function animePoster(divElement, element, listElement) {
   overlay.appendChild(studio);
 }
 
-function createStatsContent(headerText) {
+function createStatsContent(headerText,element) {
   var divStats = document.createElement("DIV"); //<div class="stats">
   headerText.appendChild(divStats);
   divStats.setAttribute("class", "stats");
@@ -106,13 +106,21 @@ function createStatsContent(headerText) {
 
   var mood = document.createElement("IMG");
   mood.setAttribute("class", "mood");
-  mood.setAttribute("src", "smile.png");
+  
   row1.appendChild(mood);
 
   var procent = document.createElement("P");
   row1.appendChild(procent);
-  procent.appendChild(document.createTextNode("89%"));
+  procent.appendChild(document.createTextNode(element.rating+"%"));
   procent.setAttribute("class", "likes");
+
+  if(element.rating>=75){
+    mood.setAttribute("src", "smile.png"); 
+  }else
+  if(element.rating<75 && element.rating>=61){
+    mood.setAttribute("src", "neutral.png"); 
+  }else mood.setAttribute("src", "sad.png"); 
+
 
   var row2 = document.createElement("DIV");
   divStats.appendChild(row2);
@@ -123,7 +131,7 @@ function createStatsContent(headerText) {
   loveIcon.setAttribute("src", "heart.png");
 
   var loved = document.createElement("P");
-  loved.appendChild(document.createTextNode("#5"));
+  loved.appendChild(document.createTextNode("#"+element.rank));
   loved.setAttribute("class","loved")
   row2.appendChild(loved);
 }

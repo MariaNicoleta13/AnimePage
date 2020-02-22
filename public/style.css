@@ -51,6 +51,7 @@ html {
   height: 50px;
   display: block;
 }
+
 .navbar-seasons li p {
   height: 20%;
   margin: 0;
@@ -60,6 +61,10 @@ html {
 }
 
 .navbar-seasons li p:hover {
+  color: #1e5e98;
+  text-shadow: 2px 2px 8px #4229d1;
+}
+.navbar-seasons .active p{
   color: #1e5e98;
   text-shadow: 2px 2px 8px #4229d1;
 }
@@ -75,6 +80,10 @@ html {
   margin: 0 auto;
   list-style: none;
   padding: 0;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  /* min-width: 500px; */
+  width: 1570px;
 }
 .animeItem {
   float: left;
@@ -87,17 +96,20 @@ html {
   margin-bottom: 2%;
 }
 .middle {
-  margin-right: 3.75%;
-  /* margin-right: 10px; */
-  margin-left: 3.75%;
-  /* margin-left: 10px; */
+  margin-right: 2%;
+  margin-left: 2%;
+  /* margin-left: 3.75%; */
 }
 .first {
-  margin-left: 7.5%;
+  margin-right: 2%;
+  margin-left: 2%;
   /* margin-left: 20px; */
 }
 .third {
-  margin-right: 7.5%;
+  margin-right: 2%;
+  margin-left: 2%;
+  /* margin-right: 4%; */
+
   /* margin-right: 20px; */
 }
 .card {
@@ -134,17 +146,22 @@ html {
   font-size: 1.2em;
   letter-spacing: 1px;
   color: rgb(191, 219, 210);
+  max-height: 85px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .overlay .title::first-letter {
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 1.5em;
+  color: #75978d;
 }
 .overlay .studio {
   font-family: "PT Sans", sans-serif;
-  color: rgb(95, 117, 238);
+  color: #5fb5ee;
   padding-bottom: 5px;
   text-align: center;
-  text-shadow: 2px 2px 10px #8529d1;
+  text-shadow: 2px 2px 10px #9d68c9;
 }
 .overlay .studio::first-letter {
   margin-left: 10px;
@@ -259,265 +276,13 @@ html {
 
 /* Media Query */
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 575px) {
-  .container {
-    max-width: auto;
-  }
-
-  .col-xs-1 {
-    width: 8.33%;
-    column-gap: 15px;
-  }
-  .col-xs-2 {
-    width: 16.66%;
-    column-gap: 15px;
-  }
-  .col-xs-3 {
-    width: 25%;
-    column-gap: 15px;
-  }
-  .col-xs-4 {
-    width: 33.33%;
-    column-gap: 15px;
-  }
-  .col-xs-5 {
-    width: 41.66%;
-    column-gap: 15px;
-  }
-  .col-xs-6 {
-    width: 50%;
-    column-gap: 15px;
-  }
-  .col-xs-7 {
-    width: 58.33%;
-    column-gap: 15px;
-  }
-  .col-xs-8 {
-    width: 66.66%;
-    column-gap: 15px;
-  }
-  .col-xs-9 {
-    width: 75%;
-    column-gap: 15px;
-  }
-  .col-xs-10 {
-    width: 83.33%;
-    column-gap: 15px;
-  }
-  .col-xs-11 {
-    width: 91.66%;
-    column-gap: 15px;
-  }
-  .col-xs-12 {
-    width: 100%;
-    column-gap: 15px;
+@media only screen and (max-width: 1020px) {
+  .animeList {
+    width: 480px;
   }
 }
-
-@media only screen and (min-device-width: 576px) and (max-device-width: 765px) {
-  .container {
-    max-width: 540px;
-    column-gap: 15px;
-  }
-  .col-s-1 {
-    width: 8.33%;
-    column-gap: 15px;
-  }
-  .col-s-2 {
-    width: 16.66%;
-    column-gap: 15px;
-  }
-  .col-s-3 {
-    width: 25%;
-    column-gap: 15px;
-  }
-  .col-s-4 {
-    width: 33.33%;
-    column-gap: 15px;
-  }
-  .col-s-5 {
-    width: 41.66%;
-    column-gap: 15px;
-  }
-  .col-s-6 {
-    width: 50%;
-    column-gap: 15px;
-  }
-  .col-s-7 {
-    width: 58.33%;
-    column-gap: 15px;
-  }
-  .col-s-8 {
-    width: 66.66%;
-    column-gap: 15px;
-  }
-  .col-s-9 {
-    width: 75%;
-    column-gap: 15px;
-  }
-  .col-s-10 {
-    width: 83.33%;
-    column-gap: 15px;
-  }
-  .col-s-11 {
-    width: 91.66%;
-    column-gap: 15px;
-  }
-  .col-s-12 {
-    width: 100%;
-    column-gap: 15px;
-  }
-}
-
-@media only screen and (min-device-width: 766px) and (max-device-width: 990px) {
-  .col-m-1 {
-    width: 8.33%;
-    column-gap: 15px;
-  }
-  .col-m-2 {
-    width: 16.66%;
-    column-gap: 15px;
-  }
-  .col-m-3 {
-    width: 25%;
-    column-gap: 15px;
-  }
-  .col-m-4 {
-    width: 33.33%;
-    column-gap: 15px;
-  }
-  .col-m-5 {
-    width: 41.66%;
-    column-gap: 15px;
-  }
-  .col-m-6 {
-    width: 50%;
-    column-gap: 15px;
-  }
-  .col-m-7 {
-    width: 58.33%;
-    column-gap: 15px;
-  }
-  .col-m-8 {
-    width: 66.66%;
-    column-gap: 15px;
-  }
-  .col-m-9 {
-    width: 75%;
-    column-gap: 15px;
-  }
-  .col-m-10 {
-    width: 83.33%;
-    column-gap: 15px;
-  }
-  .col-m-11 {
-    width: 91.66%;
-    column-gap: 15px;
-  }
-  .col-m-12 {
-    width: 100%;
-    column-gap: 15px;
-  }
-}
-
-@media only screen and (min-device-width: 991px) and (max-device-width: 1199px) {
-  .col-lg-1 {
-    width: 8.33%;
-    column-gap: 15px;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-    column-gap: 15px;
-  }
-  .col-lg-3 {
-    width: 25%;
-    column-gap: 15px;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-    column-gap: 15px;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-    column-gap: 15px;
-  }
-  .col-lg-6 {
-    width: 50%;
-    column-gap: 15px;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-    column-gap: 15px;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-    column-gap: 15px;
-  }
-  .col-lg-9 {
-    width: 75%;
-    column-gap: 15px;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-    column-gap: 15px;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-    column-gap: 15px;
-  }
-  .col-lg-12 {
-    width: 100%;
-    column-gap: 15px;
-  }
-}
-
-@media only screen and (max-device-width: 1200px) {
-  .col-xl-1 {
-    width: 8.33%;
-    column-gap: 15px;
-  }
-  .col-xl-2 {
-    width: 16.66%;
-    column-gap: 15px;
-  }
-  .col-xl-3 {
-    width: 25%;
-    column-gap: 15px;
-  }
-  .col-xl-4 {
-    width: 33.33%;
-    column-gap: 15px;
-  }
-  .col-xl-5 {
-    width: 41.66%;
-    column-gap: 15px;
-  }
-  .col-xl-6 {
-    width: 50%;
-    column-gap: 15px;
-  }
-  .col-xl-7 {
-    width: 58.33%;
-    column-gap: 15px;
-  }
-  .col-xl-8 {
-    width: 66.66%;
-    column-gap: 15px;
-  }
-  .col-xl-9 {
-    width: 75%;
-    column-gap: 15px;
-  }
-  .col-xl-10 {
-    width: 83.33%;
-    column-gap: 15px;
-  }
-  .col-xl-11 {
-    width: 91.66%;
-    column-gap: 15px;
-  }
-  .col-xl-12 {
-    width: 100%;
-    column-gap: 15px;
+@media only screen and (min-width: 1020px) and (max-width: 1585px) {
+  .animeList {
+    width: 1000px;
   }
 }
