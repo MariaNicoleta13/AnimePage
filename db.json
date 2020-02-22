@@ -1,120 +1,126 @@
 {
-  "animes": [
-    {
-      "id": 1,
-      "title": "Boku no Hero Academia",
-      "studio": "Bones",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-DplpGzgCoRZX.jpg",
-      "description": "The villain world teeters on the brink of war now that All For One is out of the picture. Shigaraki of the League of Villains squares off with Overhaul of the yakuza, vying for total control of the shadows. Meanwhile, Deku gets tangled in another dangerous internship as he struggles to keep pace with his upperclassman—Mirio.",
-      "genres": ["action", "comedy", "sci-fi"],
-      "rating": 82,
-      "rank": 1,
-      "status": ["Ep 15 of 25 airing in", "18 hours, 48 mins"],
-      "details": "Sequel to Boku no Hero Academia 3",
-      "links": {
-        "crunchyroll": "https://www.crunchyroll.com/my-hero-academia",
-        "animelab": "https://www.animelab.com/shows/my-hero-academia",
-        "hulu": "https://www.hulu.com/my-hero-academia",
-        "funimation": "https://www.funimation.com/shows/my-hero-academia/"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Sword Art Online: Alicization - War of the Underworld",
-      "studio": "A-1 Pictures",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108759-jcXbDf9BJTcb.jpg",
-      "description": "Despite their recent victory against Quinella, Kirito and Alice find themselves in another dangerous situation. The Ocean Turtle, the complex in which resides the machinery that sustains Underworld, is under attack by an unknown enemy, leading to",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 77,
-      "rank": 2,
-      "status": ["12 Episodes aired on", "October 13, 2019"],
-      "details": "Sequel to Sword Art Online: Alicization",
-      "links": {
-        "funimation": "https://www.funimation.com/shows/sword-art-online/",
-        "crunchyroll": "https://www.crunchyroll.com/sword-art-online",
-        "hidive": "https://www.hidive.com/tv/sword-art-online-alicization-war-of-underworld",
-        "animelab": "https://www.animelab.com/shows/sword-art-online"
-      }
-    },
-    {
-      "id": 3,
-      "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-      "studio": "Studio DEEN, Marvy Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
-      "description": "The third season of Nanatsu no Taizai.",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 65,
-      "rank": 3,
-      "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
-      "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
-      "links": {
-        "official": "https://www.7-taizai.net/",
-        "twitter": "https://twitter.com/7_taizai"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-      "studio": "Studio DEEN, Marvy Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
-      "description": "The third season of Nanatsu no Taizai.",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 65,
-      "rank": 3,
-      "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
-      "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
-      "links": {
-        "official": "https://www.7-taizai.net/",
-        "twitter": "https://twitter.com/7_taizai"
-      }
-    },
-    {
-      "id": 5,
-      "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-      "studio": "Studio DEEN, Marvy Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
-      "description": "The third season of Nanatsu no Taizai.",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 65,
-      "rank": 3,
-      "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
-      "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
-      "links": {
-        "official": "https://www.7-taizai.net/",
-        "twitter": "https://twitter.com/7_taizai"
-      }
-    },
-    {
-      "id": 6,
-      "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-      "studio": "Studio DEEN, Marvy Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
-      "description": "The third season of Nanatsu no Taizai.",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 65,
-      "rank": 3,
-      "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
-      "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
-      "links": {
-        "official": "https://www.7-taizai.net/",
-        "twitter": "https://twitter.com/7_taizai"
-      }
-    },
-    {
-      "id": 7,
-      "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-      "studio": "Studio DEEN, Marvy Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
-      "description": "The third season of Nanatsu no Taizai.",
-      "genres": ["action", "adventure", "fantasy"],
-      "rating": 65,
-      "rank": 3,
-      "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
-      "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
-      "links": {
-        "official": "https://www.7-taizai.net/",
-        "twitter": "https://twitter.com/7_taizai"
-      }
-    }
-  ]
+    "animes": [
+        {
+            "id": 1,
+            "title": "Boku no Hero Academia",
+            "studio": "Bones",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-DplpGzgCoRZX.jpg",
+            "description": "The villain world teeters on the brink of war now that All For One is out of the picture. Shigaraki of the League of Villains squares off with Overhaul of the yakuza, vying for total control of the shadows. Meanwhile, Deku gets tangled in another dangerous internship as he struggles to keep pace with his upperclassman—Mirio.",
+            "genres": ["action", "comedy", "sci-fi"],
+            "rating": 82,
+            "rank": 1,
+            "status": ["Ep 15 of 25 airing in", "18 hours, 48 mins"],
+            "details": "Sequel to Boku no Hero Academia 3",
+            "links": {
+                "crunchyroll": "https://www.crunchyroll.com/my-hero-academia",
+                "animelab": "https://www.animelab.com/shows/my-hero-academia",
+                "hulu": "https://www.hulu.com/my-hero-academia",
+                "funimation": "https://www.funimation.com/shows/my-hero-academia/"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Sword Art Online: Alicization - War of the Underworld",
+            "studio": "A-1 Pictures",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108759-jcXbDf9BJTcb.jpg",
+            "description": "Despite their recent victory against Quinella, Kirito and Alice find themselves in another dangerous situation. The Ocean Turtle, the complex in which resides the machinery that sustains Underworld, is under attack by an unknown enemy, leading to",
+            "genres": ["action", "adventure", "fantasy"],
+            "rating": 77,
+            "rank": 2,
+            "status": ["12 Episodes aired on", "October 13, 2019"],
+            "details": "Sequel to Sword Art Online: Alicization",
+            "links": {
+                "funimation": "https://www.funimation.com/shows/sword-art-online/",
+                "crunchyroll": "https://www.crunchyroll.com/sword-art-online",
+                "hidive": "https://www.hidive.com/tv/sword-art-online-alicization-war-of-underworld",
+                "animelab": "https://www.animelab.com/shows/sword-art-online"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Nanatsu no Taizai: Kamigami no Gekirin",
+            "studio": "Studio DEEN, Marvy Jack",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108928-Ci5iFvCfWgVY.jpg",
+            "description": "The third season of Nanatsu no Taizai.",
+            "genres": ["action", "adventure", "fantasy"],
+            "rating": 65,
+            "rank": 3,
+            "status": ["Ep 16 of 24 airing in", "4 days, 19 hours"],
+            "details": "Sequel to Nanatsu no Taizai: Imashime no Fukkatsu",
+            "links": {
+                "official": "https://www.7-taizai.net/",
+                "twitter": "https://twitter.com/7_taizai"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Shinchou Yuusha: Kono Yuusha ga Ore TUEEE Kuse ni Shinchou Sugiru",
+            "studio": "White Fox",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105156-ZVtxISdoUqnY.png",
+            "description": "The goddess Rista summons a hero to help her hard mode video game-like world. The hero, Seiya, is exceptional in every way, but he is incredibly cautious to the point of buying three sets of armor (one to wear, a spare, and a spare for the spare) and going full power against weak slimes (just in case).",
+            "genres": ["fantasy", "adventure"],
+            "rating": 74,
+            "rank": 4,
+            "status": ["12 Episodes aired on", "October 2, 2019"],
+            "details": "Source: Light Novel",
+            "links": {
+                "funimation": "https://www.funimation.com/shows/cautious-hero-the-hero-is-overpowered-but-overly-cautious/",
+                "hulu": "https://www.hulu.com/cautious-hero-the-hero-is-overpowered-but-overly-cautious",
+                "animelab": "https://www.animelab.com/shows/the-hero-is-overpowered-but-overly-cautious"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Shokugeki no Souma: Shin no Sara",
+            "studio": "J.C. Staff",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109963-t8E9axH0Dvrn.jpg",
+            "description": "The fourth season of Shokugeki no Souma.",
+            "genres": ["comedy", "ecchi", "action"],
+            "rating": 76,
+            "rank": 5,
+            "status": ["12 Episodes aired on", "October 12, 2019"],
+            "details": "Sequel to Shokugeki no Souma: San no Sara - Tootsuki Ressha-hen",
+            "links": {
+                "twitter": "https://twitter.com/shokugeki_anime",
+                "official": "http://shokugekinosoma.com/4thplate/",
+                "crunchyroll": "https://www.crunchyroll.com/food-wars-shokugeki-no-soma"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Ore wo Suki nano wa Omae dake ka yo",
+            "studio": "CONNECT",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104464-VOIqGSQs1aiR.png",
+            "description": "Amatsuyu \"Joro\" Kisaragi finds himself in a rather delightful situation, two lovely girls asked him out on a date in the same week. Little does he know he's not the actual target of their love, instead, he ends up as a love consultant forced to juggle a web of relationships more complex than initially thought.",
+            "genres": ["comedy", "romance", "drama"],
+            "rating": 73,
+            "rank": 6,
+            "status": ["12 Episodes aired on", "October 3, 2019"],
+            "details": "Source: Light Novel",
+            "links": {
+                "crunchyroll": "https://www.crunchyroll.com/oresuki-are-you-the-only-one-who-loves-me",
+                "funimation": "https://www.funimation.com/shows/oresuki-are-you-the-only-one-who-loves-me/",
+                "hidive": "https://www.hidive.com/tv/oresuki-are-you-the-only-one-who-loves-me",
+                "animelab": "https://www.animelab.com/shows/oresuki-are-you-the-only-one-who-loves-me"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Assassins Pride",
+            "studio": "EMT Squared",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104722-XVscwgdGzfnO.jpg",
+            "description": "The series takes place in a world where only those from noble families have the mana to be able to fight against monsters. Kufa is a noble born to a duke's family who is sent to tutor a young woman named Melida. If it turns out that Melida has no talent with mana, Kufa is secretly instructed to assassinate her.",
+            "genres": ["fantasy"],
+            "rating": 59,
+            "rank": 7,
+            "status": ["12 Episodes aired on", "October 10, 2019"],
+            "details": "Source: Light Novel",
+            "links": {
+                "hidive": "https://www.hidive.com/tv/assassins-pride",
+                "crunchyroll": "https://www.crunchyroll.com/assassins-pride",
+                "animelab": "https://www.animelab.com/shows/assassins-pride",
+                "vrv": "https://vrv.co/series/G60X4P8GR/ASSASSINS-PRIDE"
+            }
+        }
+    ]
 }
