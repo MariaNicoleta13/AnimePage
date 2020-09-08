@@ -3,6 +3,7 @@ function reqListener() {
   var objData = JSON.parse(stringDate);
   // console.log(objData.length);
   iterate(objData);
+  // focusItemNeighbors();
 }
 
 var oReq = new XMLHttpRequest();
@@ -11,11 +12,12 @@ oReq.open("GET", "/api/animes");
 oReq.send();
 
 function iterate(x) {
-  x.forEach(function(element, index) {
+  x.forEach(function (element, index) {
     // 0 1 2
     // 3 4 5
     // 6 7 8
     // 1 - 4 - 7 ##### x % 3 = 1
+    // console.log(element);
     if (index % 3 == 1) {
       list(element, "middle");
     } else if (index % 3 == 0) list(element, "first");
@@ -26,10 +28,16 @@ function iterate(x) {
 function list(element, clas) {
   var listElement = document.createElement("LI"); //create <li>
   listElement.setAttribute("class", clas);
+  // listElement.setAttribute("onmouseover", "focusNeighbors(this)");
+  // listElement.setAttribute("onmouseout", "myonmouseout(this)");
 
   listElement.classList.add("animeItem");
+  listElement.addEventListener("mouseenter", focusNeighbors);
+  listElement.addEventListener("mouseleave", unfocusNeighbors);
   var divElement = document.createElement("DIV"); //create <div class="card">
   divElement.setAttribute("class", "card");
+  // divElement.setAttribute("onmouseover", "focusNeighbors(this)");
+  // divElement.setAttribute("onmouseout", "myonmouseout(this)");
 
   listElement.appendChild(divElement);
 
@@ -46,7 +54,7 @@ function list(element, clas) {
   headerText.appendChild(divUpText);
   divUpText.setAttribute("class", "headerText");
 
-  element.status.forEach(function(oneStatus, index) {
+  element.status.forEach(function (oneStatus, index) {
     var pStatus = document.createElement("P");
     divUpText.appendChild(pStatus);
     pStatus.appendChild(document.createTextNode(oneStatus));
@@ -139,7 +147,7 @@ function createFooterContent(divText, element) {
   divFooter.setAttribute("class", "footer");
   divText.appendChild(divFooter);
 
-  element.genres.forEach(function(genre) {
+  element.genres.forEach(function (genre) {
     //iterate to add one genre at once
     var pFooter = document.createElement("P"); //<div class="footer"><p>
     divFooter.appendChild(pFooter);
@@ -149,4 +157,88 @@ function createFooterContent(divText, element) {
   var addIcon = document.createElement("IMG");
   divFooter.appendChild(addIcon);
   addIcon.setAttribute("src", "add.png");
+}
+
+function focusNeighbors(e) {
+  // e.stopPropagation();
+  var myElement = e.target;
+  findLINeighbor(myElement, "add", "mainText", "header");
+  console.log(e);
+}
+function unfocusNeighbors(e) {
+  var myElement = e.target;
+
+  findLINeighbor(
+    myElement,
+    "remove",
+    "mainText selectedOnHover",
+    "header selectedOnHover"
+  );
+
+  console.log(e);
+}
+function findChildrenHTMLTags(myElement, myClass) {
+  var divCard = null;
+  for (var i = 0; i < myElement.childNodes.length; i++) {
+    if (myElement.childNodes[i].className == myClass) {
+      divCard = myElement.childNodes[i];
+      break;
+    }
+  }
+  return divCard;
+}
+function findLINeighbor(myElement, addOrRemove, cssClassMain, cssClassHeader) {
+  var arrayLI = [];
+  for (
+    var i = 0;
+    i < document.getElementsByClassName("animeItem").length;
+    i++
+  ) {
+    arrayLI.push(document.getElementsByClassName("animeItem")[i]);
+  }
+
+  var arrayTitlesHTML = document.getElementsByClassName("title");
+  console.log(arrayLI);
+
+  var arrayTitles = [];
+
+  for (var i = 0; i < arrayTitlesHTML.length; i++) {
+    arrayTitles.push(arrayTitlesHTML[i].innerHTML);
+  }
+
+  // console.log("arrayTitles: ");
+  // console.log(arrayTitles);
+  var divCard = findChildrenHTMLTags(myElement, "card");
+
+  var divBackground = findChildrenHTMLTags(divCard, "background");
+
+  var divOverlay = findChildrenHTMLTags(divBackground, "overlay");
+
+  var titleElement = findChildrenHTMLTags(divOverlay, "title").innerHTML;
+  // console.log(titleElement);
+  var validIndexs = [];
+  // console.log(arrayTitles);
+  for (var i = 0; i < arrayTitles.length; i++) {
+    if (titleElement == arrayTitles[i]) {
+      // console.log(i);
+      if (i - 1 >= 0) validIndexs.push(i - 1);
+      if (i < arrayTitles.length - 1) validIndexs.push(i + 1);
+
+      for (var j = 0; j < validIndexs.length; j++) {
+        var curentIndex = validIndexs[j];
+        // console.log(curentIndex);
+        if (addOrRemove == "remove") arrayLI[curentIndex].style.opacity = "1";
+        if (addOrRemove == "add") arrayLI[curentIndex].style.opacity = "0.8";
+        var divCard = findChildrenHTMLTags(arrayLI[curentIndex], "card");
+        var description = findChildrenHTMLTags(divCard, "description");
+
+        var mainText = findChildrenHTMLTags(description, cssClassMain);
+        var headerText = findChildrenHTMLTags(description, cssClassHeader);
+
+        mainText.classList[addOrRemove]("selectedOnHover"); //remove
+        headerText.classList[addOrRemove]("selectedOnHover"); //remove
+      }
+      // console.log(validIndexs);
+    }
+  }
 }

@@ -64,7 +64,7 @@ html {
   color: #1e5e98;
   text-shadow: 2px 2px 8px #4229d1;
 }
-.navbar-seasons .active p{
+.navbar-seasons .active p {
   color: #1e5e98;
   text-shadow: 2px 2px 8px #4229d1;
 }
@@ -84,6 +84,10 @@ html {
   margin-bottom: 25px;
   /* min-width: 500px; */
   width: 1570px;
+}
+.selectedOnHover {
+  background-color: rgba(57, 57, 59, 0.425);
+  /* opacity: 0.5; */
 }
 .animeItem {
   float: left;
