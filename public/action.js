@@ -163,7 +163,7 @@ function focusNeighbors(e) {
   // e.stopPropagation();
   var myElement = e.target;
   findLINeighbor(myElement, "add", "mainText", "header");
-  console.log(e);
+  // console.log(e);
 }
 function unfocusNeighbors(e) {
   var myElement = e.target;
@@ -175,7 +175,7 @@ function unfocusNeighbors(e) {
     "header selectedOnHover"
   );
 
-  console.log(e);
+  //  console.log(e);
 }
 function findChildrenHTMLTags(myElement, myClass) {
   var divCard = null;
@@ -198,7 +198,7 @@ function findLINeighbor(myElement, addOrRemove, cssClassMain, cssClassHeader) {
   }
 
   var arrayTitlesHTML = document.getElementsByClassName("title");
-  console.log(arrayLI);
+  // console.log(arrayLI);
 
   var arrayTitles = [];
 
